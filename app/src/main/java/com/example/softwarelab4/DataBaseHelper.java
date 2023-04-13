@@ -24,7 +24,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CreateTableStatment = "CREATE TABLE " + CUSTOMER_TABLE + " (" + CUSTOMER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT , " + COLUMN_CUSTOMER_NAME + " TEXT , " + COIUMN_CUSTOMER_AGE + " INT, " + COLUMN_ACTIVE_CUSTOMER + " BOOL)";
           db.execSQL(CreateTableStatment);
-          db.close();
     }
 /*
     public boolean addOne(customerModel cm) {
